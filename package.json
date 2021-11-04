@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/garikdallari/goit-node-hw-01#readme",
   "dependencies": {
-    "nodemon": "^2.0.14"
+    "commander": "^8.3.0",
+    "nodemon": "^2.0.14",
+    "yargs": "^17.2.1"
   }
 }
