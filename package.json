@@ -1,7 +1,7 @@
 {
   "name": "goit-node-hw-01",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://monosnap.com/file/TMjbvzRhOk5Pa2uvvDbLMZ09czkx64",
   "main": "index.js",
   "scripts": {
     "start": "node index",
@@ -21,7 +21,9 @@
   "homepage": "https://github.com/garikdallari/goit-node-hw-01#readme",
   "dependencies": {
     "commander": "^8.3.0",
+    "generate-unique-id": "^2.0.1",
     "nodemon": "^2.0.14",
     "yargs": "^17.2.1"
-  }
+  },
+  "devDependencies": {}
 }

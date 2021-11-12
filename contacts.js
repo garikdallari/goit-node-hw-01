@@ -1,5 +1,6 @@
 const path = require("path");
 const fs = require("fs").promises;
+const generateUniqueId = require("generate-unique-id");
 
 const contactsPath = path.resolve("./db/contacts.json");
 
@@ -28,7 +29,8 @@ async function removeContact(contactId) {
 
 async function addContact(name, email, phone) {
   const contacts = await listContacts();
-  const newContact = { name, email, phone };
+  const id = Number(generateUniqueId({ length: 5, useLetters: false }));
+  const newContact = { id, name, email, phone };
   const updatedContacts = JSON.stringify([...contacts, newContact]);
   console.log(newContact);
   return await fs.writeFile(contactsPath, updatedContacts, "utf8");
